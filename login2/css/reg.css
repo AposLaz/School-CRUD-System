@@ -1,0 +1,165 @@
+body{
+	font-family: Tahoma,Gevena,sans-serif;
+	color: #fff;
+	background:url(back4.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.signup
+{
+	background: rgba(0,0,0,0.9);
+	padding: 40px;
+	width: 35%;
+	margin-top: 80px;
+	height: 480px;
+	margin-left: 33.33%;
+	margin:0 auto;
+	margin-top: 5%;
+	border-radius: 10px;
+}
+
+form
+{
+	width:100%;
+	text-align: center;
+}
+
+input
+{
+	width:210px;
+	text-align: center;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	font-family: 'Play',sans-serif;
+	font-size: 16px;
+	font-weight:200px;
+	padding: 10px 0;
+	transition: border 0.5s;
+	outline: none;
+	color: #fff;
+}
+
+input[type=submit]
+{
+	border: none;
+	width:190px;
+	background: white;
+	color: #000;
+	font-size: 16px;
+	line-height: 25px;
+	padding: 10px 0;
+	border-radius: 28px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover
+{
+	color: #fff;
+	background-color: #2196F3;
+}
+
+h2
+{
+	color:#000;
+}
+
+
+::placeholder
+{
+	color: #f0f8ff;
+	opacity: 0.8; /*Firefox*/
+}
+
+
+.fs{
+	display: -webkit-flex; /* Safari */
+  	-webkit-flex-direction: row-reverse; /* Safari 6.1+ */
+	display: flex;
+  	flex-direction:row;
+}
+
+
+.fs input{
+	margin: 10px;
+}
+
+.help-block{
+	color:red;
+	font-size: 10px;
+}
+
+
+
+@media (max-width: 769px) {
+body{
+	font-family: Tahoma,Gevena,sans-serif;
+	color: #fff;
+	background-color:red; /* url(back1.jpg);*/
+	background-size: cover;
+}
+}
+
+@media (max-width: 1024px) {
+	.signup-med1
+	{
+		background: rgba(0,0,0,0.9);
+		padding: 40px;
+		width: 50%;
+		margin-top: 80px;
+		height: 480px;
+		margin-left: 33.33%;
+		margin:0 auto;
+		margin-top: 5%;
+		border-radius: 10px;
+	}
+
+	input
+	{
+		width:230px;
+		text-align: center;
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid #fff;
+		font-family: 'Play',sans-serif;
+		font-size: 16px;
+		font-weight:200px;
+		padding: 10px 0;
+		transition: border 0.5s;
+		outline: none;
+		color: #fff;
+	}
+
+	input[type=submit]
+	{
+		border: none;
+		width:190px;
+		background: white;
+		color: #000;
+		font-size: 16px;
+		line-height: 25px;
+		padding: 10px 0;
+		border-radius: 28px;
+		cursor: pointer;
+	}
+
+	input[type=submit]:hover
+	{
+		color: #fff;
+		background-color: #2196F3;
+	}
+
+
+}
+
+@media (max-width: 769px) {
+	form{
+		width:100%;
+	}
+}
+
+input[type=checkbox]
+{
+	margin:-100px;
+}

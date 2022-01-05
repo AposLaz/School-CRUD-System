@@ -1,0 +1,56 @@
+version: "3"
+
+services:
+  #db
+  db: 
+    image: mysql
+    ports: 
+      - "3306:3306"
+    container_name: mysqli
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_DATABASE: loginCloud
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: root 
+    volumes:
+      - ./mysqldatas:/var/lib/mysql   #/etc/mysql/conf.d
+    networks:
+        - overlay
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    depends_on:
+      - db
+    ports:
+      - "8090:80"
+    environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: test
+    links:
+      - db:db #db
+    networks:
+      - overlay
+
+  web:
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    container_name: loginform
+    restart: always
+    depends_on: 
+      - db
+    volumes:
+      - ./login2:/var/www/html  
+    #working_dir: /var/www/html  
+    ports:
+      - "8080:80"
+    links:
+      - db
+    networks:
+      - overlay
+
+networks:
+  overlay:

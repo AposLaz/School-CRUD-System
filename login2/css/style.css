@@ -1,0 +1,98 @@
+body{
+	font-family: Tahoma,Gevena,sans-serif;
+	color: #fff;
+	background: url(back4.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+.signin
+{
+	background: rgba(0,0,0,0.9);
+	padding: 40px;
+	width: 250px;
+	margin:0 auto;
+	margin-top: 7%;
+	height: 400px;
+	margin-right: 33.33%;
+	border-radius: 10px;
+}
+
+form
+{
+	width:100%;
+	text-align: center;
+}
+
+input
+{
+	width:240px;
+	text-align: center;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	font-family: 'Play',sans-serif;
+	font-size: 16px;
+	font-weight:200px;
+	padding: 10px 0;
+	transition: border 0.5s;
+	outline: none;
+	color: #fff;
+}
+
+
+
+input[type=submit]
+{
+	border: none;
+	width:190px;
+	background: #ffffff;
+	color: #000;
+	font-size: 16px;
+	line-height: 25px;
+	padding: 10px 0;
+	border-radius: 28px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover
+{
+	color: #fff;
+	background-color: #2196F3;
+}
+
+
+.help-block{
+	color:red;
+	font-size: 10px;
+}
+
+a{
+	color:#ffffff;
+	text-decoration: blink;
+}
+
+a:hover
+{
+	color: #2196F3;
+}
+
+#container
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+::placeholder
+{
+	color: #f0f8ff;
+	opacity: 0.8; /*Firefox*/
+}
+
+
+
+input[type=checkbox]
+{
+	margin:-110px;
+}

@@ -1,0 +1,78 @@
+body{
+	font-family: Tahoma,Gevena,sans-serif;
+	color: #fff;
+	background:url(back4.jpg);
+	background-size: cover;
+}
+
+.forgetPass{
+	background: rgba(0,0,0,0.9);
+	padding: 40px;
+	width:240px;
+	height: 340px;
+	margin-right: 33.33%;
+	margin: 0 auto;
+	margin-top: 10%;
+	border-radius: 10px;
+}
+
+h2{
+	margin-top: 28px;
+	margin-right: 0;
+}
+
+a{
+	font-family: Tahoma, Gevena sans-serif;
+	margin-right: : 0;
+}
+
+
+
+input[type=text]{
+	width: 240px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	font-family: 16px;
+	font-weight: 200px;
+	padding: 10px 0;
+	transition: border 0.5s;
+	text-align: center;
+	color: white;
+	outline: none;
+}
+
+input[type=submit]
+{
+	border: none;
+	width:180px;
+	background: white;
+	color: black;
+	font-size: 16px;
+	line-height: 25px;
+	padding: 10px 0;
+	border-radius: 28px;
+	cursor: pointer;
+	margin-left: 30px;
+	outline: none;
+}
+
+input[type=submit]:hover
+{
+	color: white;
+	background-color: #2196F3;
+}
+
+::placeholder
+{
+	color: #f0f8ff;
+	opacity: 0.8; /*Firefox*/
+}
+
+.help-block{
+	color:red;
+	margin-top: -10px;
+	font-size: 10px;
+  }
+  
+
